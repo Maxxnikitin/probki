@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url(./raleway400.woff2) format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(./raleway700.woff2) format('woff2');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(./raleway800.woff2) format('woff2');
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(./open-sans400.woff2) format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(./open-sans700.woff2) format('woff2');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(./open-sans800.woff2) format('woff2');
+  font-weight: 800;
+  font-display: swap;
+}
