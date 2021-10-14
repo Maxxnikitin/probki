@@ -11,6 +11,8 @@
 	--text-black-color: #1c1c1c;
 	--text-select-color: #a29d90;
 	--colors-interface-form: #f5f1e3;
+	--colors-button-hover: #a86c21;
+	--colors-button-pressed: #7e4600;
 
 	--scrollbar-color: #2F2F37 #8585AD;
 	--scrollbar-width: thin;
@@ -114,31 +116,6 @@ body {
 	font-size: 15px;
 	line-height: 20px;
 	color: var(--text-additional-color);
-}
-
-.text_color_inactive {
-	color: var(--text-inactive-color);
-}
-
-.text_type_digits-default {
-	font-family: 'Iceland';
-	font-weight: normal;
-	font-size: 28px;
-	line-height: .86;
-}
-
-.text_type_digits-medium {
-	font-family: 'Iceland';
-	font-weight: normal;
-	font-size: 48px;
-	line-height: .75;
-}
-
-.text_type_digits-large {
-	font-family: 'Iceland';
-	font-weight: normal;
-	font-size: 144px;
-	line-height: .83;
 }
 
 .noselect {

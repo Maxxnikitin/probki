@@ -1,0 +1,41 @@
+.button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: var(--common-transition);
+  background: none;
+  padding: 0;
+  border-radius: var(--common-border-radius);
+  width: 240px;
+  height: 44px;
+  font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 140%;
+	letter-spacing: -0.31px;
+	text-align: center;
+}
+
+.form {
+  background-color: var(--text-primary-color);
+  color: var(--text-white-color);
+}
+
+.form:disabled {
+  opacity: .4;
+}
+
+.form:hover {
+  background-color: var(--colors-button-hover);
+}
+
+.form:active {
+  background-color: var(--colors-button-pressed);
+}
+
+
+.cart {
+  background-color: var(--text-white-color);
+  color: var(--text-black-color);
+}
