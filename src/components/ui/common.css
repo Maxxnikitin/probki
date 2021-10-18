@@ -75,6 +75,15 @@ body {
 	color: var(--text-secondary-color);
 }
 
+.text_type_h3 {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	color: var(--text-black-color);
+}
+
 .text_type_large {
 	font-family: 'Open Sans';
 	font-style: normal;
