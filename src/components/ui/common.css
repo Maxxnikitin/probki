@@ -10,6 +10,7 @@
 	--text-white-color: #fff;
 	--text-black-color: #1c1c1c;
 	--text-select-color: #a29d90;
+	--text-rating-color: #111;
 	--colors-interface-form: #f5f1e3;
 	--colors-button-hover: #a86c21;
 	--colors-button-pressed: #7e4600;
@@ -84,6 +85,15 @@ body {
 	color: var(--text-black-color);
 }
 
+.text_type_large-white {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 140%;
+	color: var(--text-white-color);
+}
+
 .text_type_large {
 	font-family: 'Open Sans';
 	font-style: normal;
@@ -118,6 +128,15 @@ body {
 	font-size: 16px;
 	line-height: 140%;
 	color: var(--text-secondary-color);
+}
+
+.text_type_medium-rating {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 140%;
+	color: var(--text-rating-color);
 }
 
 .text_type_medium {

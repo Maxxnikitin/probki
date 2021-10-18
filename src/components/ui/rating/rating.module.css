@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--text-white-color);
+  border-radius: var(--common-border-radius);
+  width: 80px;
+  height: 32px;
+}
+
+.icon {
+  width: 15px;
+}

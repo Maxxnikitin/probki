@@ -1,0 +1,33 @@
+.content {
+  display: flex;
+}
+
+.img {
+  width: 158px;
+  height: 157px;
+  border-radius: var(--common-border-radius);
+}
+
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.nameBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.description {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
