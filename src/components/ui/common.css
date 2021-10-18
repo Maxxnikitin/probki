@@ -13,6 +13,8 @@
 	--colors-interface-form: #f5f1e3;
 	--colors-button-hover: #a86c21;
 	--colors-button-pressed: #7e4600;
+	--colors-checkbox: #5bb0ff;
+	--colors-checkbox-border: #dddbcb;
 
 	--scrollbar-color: #2F2F37 #8585AD;
 	--scrollbar-width: thin;
@@ -98,6 +100,15 @@ body {
 	font-size: 16px;
 	line-height: 140%;
 	color: var(--text-select-color);
+}
+
+.text_type_medium-secondary {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 140%;
+	color: var(--text-secondary-color);
 }
 
 .text_type_medium {
