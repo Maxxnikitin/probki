@@ -5,7 +5,6 @@ import styles from "./input.module.css";
 export const Input = ({
   type = "text",
   kind = "form",
-  search = false,
   placeholder,
   label,
   extraClass = "",

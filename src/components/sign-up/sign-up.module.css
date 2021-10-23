@@ -4,3 +4,20 @@
   background-color: var(--colors-interface-form);
   backdrop-filter: blur(132px);
 }
+
+.policyBox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  cursor: pointer;
+}
+
+.policy {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}

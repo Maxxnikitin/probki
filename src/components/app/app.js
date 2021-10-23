@@ -6,6 +6,7 @@ import { GoodsCard } from "../goods-card/goods-card";
 import goodImg from "../../images/1.jpg";
 import './app.css';
 import { Input } from '../ui/input/input';
+import { SignUp } from "../sign-up/sign-up";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
       </div>
       <Input label='Фамилия' />
       <Input kind='search' placeholder='Поиск по сайту' />
+      <div style={{width: "460px"}}>
+        <SignUp />
+      </div>
     </div>
   );
 }

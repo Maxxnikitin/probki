@@ -47,6 +47,9 @@
 .p-30 {
     padding: calc(var(--offset-base-size)  * 30);
 }
+.p-35 {
+    padding: calc(var(--offset-base-size)  * 35);
+}
 .p-40 {
     padding: calc(var(--offset-base-size)  * 40);
 }
@@ -98,6 +101,9 @@
 }
 .pl-30 {
     padding-left: calc(var(--offset-base-size)  * 30);
+}
+.pl-35 {
+    padding-left: calc(var(--offset-base-size)  * 35);
 }
 .pl-40 {
     padding-left: calc(var(--offset-base-size)  * 40);
@@ -151,6 +157,9 @@
 .pr-30 {
     padding-right: calc(var(--offset-base-size)  * 30);
 }
+.pr-35 {
+    padding-right: calc(var(--offset-base-size)  * 35);
+}
 .pr-40 {
     padding-right: calc(var(--offset-base-size)  * 40);
 }
@@ -203,6 +212,9 @@
 .pt-30 {
     padding-top: calc(var(--offset-base-size)  * 30);
 }
+.pt-35 {
+    padding-top: calc(var(--offset-base-size)  * 35);
+}
 .pt-40 {
     padding-top: calc(var(--offset-base-size)  * 40);
 }
@@ -254,6 +266,9 @@
 }
 .pb-30 {
     padding-bottom: calc(var(--offset-base-size)  * 30);
+}
+.pb-35 {
+    padding-bottom: calc(var(--offset-base-size)  * 35);
 }
 .pb-40 {
     padding-bottom: calc(var(--offset-base-size)  * 40);
@@ -309,6 +324,9 @@
 .m-30 {
     margin: calc(var(--offset-base-size)  * 30);
 }
+.m-35 {
+    margin: calc(var(--offset-base-size)  * 35);
+}
 .m-40 {
     margin: calc(var(--offset-base-size)  * 40);
 }
@@ -360,6 +378,9 @@
 }
 .ml-30 {
     margin-left: calc(var(--offset-base-size)  * 30);
+}
+.ml-35 {
+    margin-left: calc(var(--offset-base-size)  * 35);
 }
 .ml-40 {
     margin-left: calc(var(--offset-base-size)  * 40);
@@ -413,6 +434,9 @@
 .mr-30 {
     margin-right: calc(var(--offset-base-size)  * 30);
 }
+.mr-35 {
+    margin-right: calc(var(--offset-base-size)  * 35);
+}
 .mr-40 {
     margin-right: calc(var(--offset-base-size)  * 40);
 }
@@ -465,6 +489,9 @@
 .mt-30 {
     margin-top: calc(var(--offset-base-size)  * 30);
 }
+.mt-35 {
+    margin-top: calc(var(--offset-base-size)  * 35);
+}
 .mt-40 {
     margin-top: calc(var(--offset-base-size)  * 40);
 }
@@ -516,6 +543,9 @@
 }
 .mb-30 {
     margin-bottom: calc(var(--offset-base-size)  * 30);
+}
+.mb-35 {
+    margin-bottom: calc(var(--offset-base-size)  * 35);
 }
 .mb-40 {
     margin-bottom: calc(var(--offset-base-size)  * 40);

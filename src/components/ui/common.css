@@ -91,6 +91,10 @@ body {
 	color: var(--text-additional-color);
 }
 
+.text_color_checkbox {
+	color: var(--colors-checkbox);
+}
+
 .text_type_h1 {
 	font-family: 'Raleway';
 	font-style: normal;
