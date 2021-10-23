@@ -9,7 +9,7 @@ export const SignUp = ({
   return (
     <FormContainer>
       <form className={styles.form}>
-        <h1 className='text text_type_h3'>Регистрация</h1>
+        <h3 className='text text_type_h3 text_color_black'>Регистрация</h3>
       </form>
     </FormContainer>
   );

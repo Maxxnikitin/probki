@@ -11,6 +11,7 @@
 	--text-black-color: #1c1c1c;
 	--text-select-color: #a29d90;
 	--text-rating-color: #111;
+	--text-input-color: #787878;
 	--colors-interface-form: #f5f1e3;
 	--colors-button-hover: #a86c21;
 	--colors-button-pressed: #7e4600;
@@ -58,13 +59,44 @@ body {
 	padding: 0;
 }
 
+.text_color_primary {
+	color: var(--text-primary-color);
+}
+
+.text_color_secondary {
+	color: var(--text-secondary-color);
+}
+
+.text_color_black {
+	color: var(--text-black-color);
+}
+
+.text_color_white {
+	color: var(--text-white-color);
+}
+
+.text_color_select {
+	color: var(--text-select-color);
+}
+
+.text_color_input {
+	color: var(--text-input-color);
+}
+
+.text_color_rating {
+	color: var(--text-rating-color);
+}
+
+.text_color_additional {
+	color: var(--text-additional-color);
+}
+
 .text_type_h1 {
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 50px;
 	line-height: 140%;
-	color: var(--text-primary-color);
 }
 
 .text_type_h2 {
@@ -73,7 +105,6 @@ body {
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 130%;
-	color: var(--text-secondary-color);
 }
 
 .text_type_h3 {
@@ -85,58 +116,12 @@ body {
 	color: var(--text-black-color);
 }
 
-.text_type_large-white {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 140%;
-	color: var(--text-white-color);
-}
-
 .text_type_large {
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 140%;
-	color: var(--text-primary-color);
-}
-
-.text_type_medium-white {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 140%;
-	color: var(--text-white-color);
-}
-
-.text_type_medium-select {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 140%;
-	color: var(--text-select-color);
-}
-
-.text_type_medium-secondary {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 140%;
-	color: var(--text-secondary-color);
-}
-
-.text_type_medium-rating {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 140%;
-	color: var(--text-rating-color);
 }
 
 .text_type_medium {
@@ -145,7 +130,6 @@ body {
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 140%;
-	color: var(--text-secondary-color);
 }
 
 .text_type_small {
@@ -154,7 +138,6 @@ body {
 	font-weight: normal;
 	font-size: 15px;
 	line-height: 20px;
-	color: var(--text-additional-color);
 }
 
 .noselect {
