@@ -16,8 +16,11 @@ function App() {
       <RadioBtn name="test3" id="1" label="Импортное пиво" />
       <RadioBtn name="test3" id="2" label="Импортное пиво" />
       <RadioBtn name="test3" id="3" label="Импортное пиво" />
+      <div style={{ width: "860px", marginBottom: "20px" }}>
+        <GoodsCard img={goodImg} isRow={true} name="Пиво Найтберг Жигулёвское" />
+      </div>
       <div style={{ width: "860px" }}>
-        <GoodsCard img={goodImg} name="Пиво Найтберг Жигулёвское" />
+        <GoodsCard img={goodImg} isRow={false} name="Пиво Найтберг Жигулёвское" />
       </div>
       <Input label='Фамилия' />
       <Input kind='search' placeholder='Поиск по сайту' />

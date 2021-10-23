@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./rating.module.css";
 import starIcon from "../../../images/icons/star.svg";
-import { allTexts } from "../../../texts/ru";
+import { textGoodsCard } from "../../../texts/ru";
 
 export const Rating = ({ rating, extraClass = "" }) => {
   return (
@@ -9,7 +9,7 @@ export const Rating = ({ rating, extraClass = "" }) => {
       <img
         className={`${styles.icon} mr-3`}
         src={starIcon}
-        alt={allTexts.goodsCard.ratingAlt}
+        alt={textGoodsCard.ratingAlt}
       />
       <p className={`${styles.rating} text text_type_medium text_color_rating`}>
         {rating.toFixed(1)}

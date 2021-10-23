@@ -1,7 +1,6 @@
 import React from "react";
 import { nanoid } from "nanoid";
 import styles from "./input.module.css";
-import searchIcon from "../../../images/icons/search.svg";
 
 export const Input = ({
   type = "text",
