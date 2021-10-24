@@ -148,6 +148,14 @@ body {
   line-height: 140%;
 }
 
+.text_type_large-semibold {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+}
+
 .text_type_medium {
   font-family: "Open Sans";
   font-style: normal;

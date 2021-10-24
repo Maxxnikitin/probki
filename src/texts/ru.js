@@ -7,7 +7,7 @@ export const textGoodsCard = {
   currency: "₽",
   imgAlt: "Фото товара.",
   ratingAlt: "Звезда.",
-  delAlt: "Кнопка удаления товара."
+  delAlt: "Кнопка удаления товара.",
 };
 
 export const textSignUp = {
@@ -19,4 +19,8 @@ export const textSignUp = {
   agreement: "Согласен с",
   privacyPolicy: "политикой конфиденциальности",
   btn: "Регистрация",
+};
+
+export const textPromoCard = {
+  imgAlt: "Картинка акции.",
 };
