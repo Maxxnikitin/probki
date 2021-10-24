@@ -29,3 +29,11 @@ export const textCooperationCard = {
   imgAlt: "Картинка предложения.",
 };
 
+export const textFooter = {
+  logoAlt: "Логотип.",
+  socialsAlt: "Иконка соцсети.",
+  main: "Главная",
+  loyalty: "О программе лояльности",
+  assortment: "Ассортимент",
+  partners: "Партнёрам",
+};
