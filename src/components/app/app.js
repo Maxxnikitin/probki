@@ -5,11 +5,13 @@ import { RadioBtn } from "../ui/radio-btn/radio-btn";
 import { GoodsCard } from "../goods-card/goods-card";
 import goodImg from "../../images/1.jpg";
 import promoImg from "../../images/11.jpg";
+import cooperationImg from "../../images/6.jpg";
 import "./app.css";
 import { Input } from "../ui/input/input";
 import { SignUp } from "../sign-up/sign-up";
 import { CartGoods } from "../cart-goods/cart-goods";
 import { PromoCard } from "../promo-card/promo-card";
+import { CooperationCard } from "../cooperation-card/cooperation-card";
 
 function App() {
   return (
@@ -49,6 +51,11 @@ function App() {
         img={promoImg}
         title="2+1"
         text="За каждую покупку 2 литров пива вы получите 1 в подарок"
+      />
+      <CooperationCard
+        img={cooperationImg}
+        title="Нашим поставщикам"
+        text="Хотите предложить свою продукцию для продажи в сети магазинов «PROБКИ»?"
       />
     </div>
   );

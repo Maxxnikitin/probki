@@ -24,3 +24,8 @@ export const textSignUp = {
 export const textPromoCard = {
   imgAlt: "Картинка акции.",
 };
+
+export const textCooperationCard = {
+  imgAlt: "Картинка предложения.",
+};
+
