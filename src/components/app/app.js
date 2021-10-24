@@ -13,6 +13,7 @@ import { SignUp } from "../sign-up/sign-up";
 import { CartGoods } from "../cart-goods/cart-goods";
 import { PromoCard } from "../promo-card/promo-card";
 import { CooperationCard } from "../cooperation-card/cooperation-card";
+import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/">
+            <Header />
             <Button text="test" />
             <Checkbox name="test" label="Импортное пиво" />
             <Checkbox name="test2" label="Импортное пиво" />

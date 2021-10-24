@@ -36,4 +36,17 @@ export const textFooter = {
   loyalty: "О программе лояльности",
   assortment: "Ассортимент",
   partners: "Партнёрам",
+  copyright: "probkishop.ru",
+};
+
+export const textHeader = {
+  tel: "+7 (968)-819-01-89",
+  placeholder: "Поиск по сайту",
+  locationAlt: "Иконка геолокации.",
+  logoAlt: "Логотип",
+  iconAlt: "Иконка меню.",
+  zhukovskiy: "г. Жуковский",
+  main: "Главная",
+  catalog: "Каталог",
+  loyalty: "Программа лояльности",
 };

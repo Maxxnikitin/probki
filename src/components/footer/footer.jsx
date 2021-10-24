@@ -12,7 +12,7 @@ export const Footer = ({ extraClass = "" }) => {
     <footer className={`${styles.footer} ${extraClass}`}>
       <div className={styles.content}>
         <div className={styles.first_row}>
-          <img className={styles.logo} src={logo} alt={textFooter.imgAlt} />
+          <img className={styles.logo} src={logo} alt={textFooter.logoAlt} />
           <nav className={styles.nav}>
             <NavLink
               exact
@@ -45,7 +45,7 @@ export const Footer = ({ extraClass = "" }) => {
           <p
             className={`${styles.copyright} text text_type_medium text_color_primary`}
           >
-            &copy; probkishop.ru
+            &copy; {textFooter.copyright}
           </p>
           <ul className={styles.socials}>
             <li className={`${styles.social} mr-6`}>
