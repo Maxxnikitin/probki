@@ -1,5 +1,6 @@
 .content {
   display: flex;
+  align-items: center;
 }
 
 .img {
@@ -11,12 +12,13 @@
 .mainInfo {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex-grow: 1;
 }
 
 .nameBox {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -30,6 +32,15 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+}
+
+.name {
+  text-align: left;
+}
+
+.cost {
+  min-width: 100px;
+  text-align: right;
 }
 
 .cell {
@@ -62,4 +73,8 @@
   position: absolute;
   top: 259px;
   right: 16px;
+}
+
+.cell .cost {
+  text-align: left;
 }

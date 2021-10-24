@@ -12,6 +12,7 @@
   --text-select-color: #a29d90;
   --text-rating-color: #111;
   --text-input-color: #787878;
+  --text-stock-color: #9f403d;
   --colors-interface-form: #f5f1e3;
   --colors-button-hover: #a86c21;
   --colors-button-pressed: #7e4600;
@@ -95,6 +96,10 @@ body {
   color: var(--colors-checkbox);
 }
 
+.text_color_stock {
+  color: var(--text-stock-color);
+}
+
 .text_type_h1 {
   font-family: "Raleway";
   font-style: normal;
@@ -117,7 +122,22 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: var(--text-black-color);
+}
+
+.text_type_cart {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.text_type_goods-count {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22px;
 }
 
 .text_type_large {

@@ -20,7 +20,7 @@ export const GoodsCard = ({
       <article className={`${styles.content} ${extraClass}`}>
         <img className={`${styles.img} mr-16`} src={img} alt={alt} />
         <div className={styles.mainInfo}>
-          <div className={`${styles.nameBox} mb-15`}>
+          <div className={`${styles.nameBox}`}>
             <h3
               className={`${styles.name} text text_type_large text_color_white`}
             >

@@ -5,8 +5,9 @@ export const textGoodsCard = {
   stockUnit: "шт",
   btnText: "В корзину",
   currency: "₽",
-  imgAlt: "фото товара.",
-  ratingAlt: "звезда.",
+  imgAlt: "Фото товара.",
+  ratingAlt: "Звезда.",
+  delAlt: "Кнопка удаления товара."
 };
 
 export const textSignUp = {

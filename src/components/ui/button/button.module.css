@@ -21,11 +21,11 @@
   opacity: .4;
 }
 
-.form:hover {
+.form:hover:enabled {
   background-color: var(--colors-button-hover);
 }
 
-.form:active {
+.form:active:enabled {
   background-color: var(--colors-button-pressed);
 }
 
