@@ -17,8 +17,8 @@ export const CartGoods = ({
   return (
     <article className={`${styles.content} p-12 ${extraClass}`}>
       <img className={`${styles.img} mr-16`} src={img} alt={alt} />
-      <div className={styles.mainInfo}>
-        <div className={`${styles.nameBox}`}>
+      <div className={styles.main_info}>
+        <div className={`${styles.name_box}`}>
           <h3
             className={`${styles.name} text text_type_large text_color_black mb-4`}
           >
@@ -38,9 +38,9 @@ export const CartGoods = ({
             </p>
             <GoodsCount />
           </div>
-          <button type="button" className={styles.delBtn}>
+          <button type="button" className={styles.del_btn}>
             <img
-              className={styles.delIcon}
+              className={styles.del_icon}
               src={delIcon}
               alt={textGoodsCard.delAlt}
             />

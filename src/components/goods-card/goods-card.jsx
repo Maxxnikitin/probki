@@ -19,8 +19,8 @@ export const GoodsCard = ({
     return (
       <article className={`${styles.content} ${extraClass}`}>
         <img className={`${styles.img} mr-16`} src={img} alt={alt} />
-        <div className={styles.mainInfo}>
-          <div className={`${styles.nameBox}`}>
+        <div className={styles.main_info}>
+          <div className={`${styles.name_box}`}>
             <h3
               className={`${styles.name} text text_type_large text_color_white`}
             >
@@ -63,7 +63,7 @@ export const GoodsCard = ({
         <p
           className={`${styles.volume} text text_type_small text_color_additional mb-8`}
         >{`${textGoodsCard.volume}: ${volume} ${textGoodsCard.volumeUnit}`}</p>
-        <div className={styles.buttonBox}>
+        <div className={styles.button_box}>
           <p
             className={`${styles.cost} text text_type_large text_color_primary`}
           >{`${cost} ${textGoodsCard.currency}`}</p>

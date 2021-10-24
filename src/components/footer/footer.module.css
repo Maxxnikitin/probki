@@ -12,13 +12,13 @@
   margin: 0 auto;
 }
 
-.firstRow {
+.first_row {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.secondRow {
+.second_row {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;

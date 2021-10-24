@@ -36,7 +36,7 @@ export const SignUp = ({ extraClass = "" }) => {
           label={textSignUp.password}
           extraClass="mb-4"
         />
-        <div className={`${styles.policyBox} mb-35`}>
+        <div className={`${styles.policy_box} mb-35`}>
           <input id="checkbox" type="checkbox" className={styles.checkbox} />
           <label
             htmlFor="checkbox"

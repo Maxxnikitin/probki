@@ -5,7 +5,7 @@
   backdrop-filter: blur(132px);
 }
 
-.policyBox {
+.policy_box {
   display: flex;
   align-items: center;
 }

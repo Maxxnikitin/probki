@@ -11,7 +11,7 @@ export const Footer = ({ extraClass = "" }) => {
   return (
     <footer className={`${styles.footer} ${extraClass}`}>
       <div className={styles.content}>
-        <div className={styles.firstRow}>
+        <div className={styles.first_row}>
           <img className={styles.logo} src={logo} alt={textFooter.imgAlt} />
           <nav className={styles.nav}>
             <NavLink
@@ -41,7 +41,7 @@ export const Footer = ({ extraClass = "" }) => {
             </NavLink>
           </nav>
         </div>
-        <div className={styles.secondRow}>
+        <div className={styles.second_row}>
           <p
             className={`${styles.copyright} text text_type_medium text_color_primary`}
           >
