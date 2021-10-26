@@ -16,6 +16,7 @@ import { CooperationCard } from "../cooperation-card/cooperation-card";
 import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
 import { StartPage } from '../start-page/start-page';
+import { NotFoundPage } from '../not-found-page/not-found-page';
 
 function App() {
   return (
@@ -23,9 +24,9 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/">
-            <Header />
-            <StartPage />
-            <Button text="test" />
+            {/* <Header /> */}
+            <NotFoundPage />
+            {/* <Button text="test" />
             <Checkbox name="test" label="Импортное пиво" />
             <Checkbox name="test2" label="Импортное пиво" />
             <RadioBtn name="test3" id="1" label="Импортное пиво" />
@@ -66,7 +67,7 @@ function App() {
               title="Нашим поставщикам"
               text="Хотите предложить свою продукцию для продажи в сети магазинов «PROБКИ»?"
             />
-            <Footer />
+            <Footer /> */}
           </Route>
         </Switch>
       </BrowserRouter>

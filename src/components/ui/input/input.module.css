@@ -28,7 +28,7 @@
   background-color: var(--background);
   border: 1px solid var(--text-select-color);
   padding: 0 34px;
-  background: url(../../../images/icons/search.svg) no-repeat scroll 10px 8px;
+  background: url(../../../images/icons/search.svg) no-repeat scroll 8px 6px;
 }
 
 .search::placeholder {
