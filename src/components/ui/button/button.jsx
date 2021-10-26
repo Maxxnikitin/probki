@@ -11,7 +11,7 @@ export const Button = ({
 }) => {
   return (
     <button
-      className={`text text_type_medium text_color_${textColor} ${textColor} ${styles.button} ${styles[kind]} ${extraClass}`}
+      className={`text text_type_medium text_color_${textColor} ${styles.button} ${styles[kind]} ${extraClass}`}
       type={type}
       onClick={onClick}
     >
