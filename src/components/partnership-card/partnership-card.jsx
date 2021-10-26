@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./cooperation-card.module.css";
-import { textCooperationCard } from "../../texts/ru";
+import styles from "./partnership-card.module.css";
+import { textPartnershipCard } from "../../texts/ru";
 
-export const CooperationCard = ({
+export const PartnershipCard = ({
   img,
-  alt = textCooperationCard.imgAlt,
+  alt = textPartnershipCard.imgAlt,
   title,
   text,
   extraClass = "",
