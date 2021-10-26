@@ -15,6 +15,7 @@ import { PromoCard } from "../promo-card/promo-card";
 import { CooperationCard } from "../cooperation-card/cooperation-card";
 import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
+import { StartPage } from '../start-page/start-page';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Switch>
           <Route path="/">
             <Header />
+            <StartPage />
             <Button text="test" />
             <Checkbox name="test" label="Импортное пиво" />
             <Checkbox name="test2" label="Импортное пиво" />

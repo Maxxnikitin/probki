@@ -50,3 +50,11 @@ export const textHeader = {
   catalog: "Каталог",
   loyalty: "Программа лояльности",
 };
+
+export const textStartPage = {
+  logoAlt: "Логотип.",
+  title: "Вы старше 18 лет?",
+  agree: "Да",
+  disagree: "Нет",
+  alarm: "Извините, наш сайт предназначен только для совершеннолетних. =(",
+};
