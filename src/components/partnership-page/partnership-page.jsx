@@ -6,6 +6,7 @@ import { Footer } from "../footer/footer";
 import providerImg from "../../images/6.jpg";
 import rentImg from "../../images/7.jpg";
 import { FeedbackCard } from "../feedback-card/feedback-card";
+import { RecomendationCard } from "../recomendation-card/recomendation-card";
 
 export const PartnershipPage = ({ extraClass = "" }) => {
   return (
@@ -15,9 +16,7 @@ export const PartnershipPage = ({ extraClass = "" }) => {
         <div
           className={`${styles.info_box} text text_type_medium text_color_white`}
         >
-          <h2
-            className={`${styles.title} text_type_h2 text_color_primary`}
-          >
+          <h2 className={`${styles.title} text_type_h2 text_color_primary`}>
             {textPrtnershipPage.title1}
           </h2>
           <p className={`${styles.text} mt-5 mb-12`}>
@@ -39,10 +38,10 @@ export const PartnershipPage = ({ extraClass = "" }) => {
           src={providerImg}
           alt={textPrtnershipPage.imgAlt}
         />
-        <div className={`${styles.info_box} text text_type_medium text_color_white`}>
-          <h2
-            className={`${styles.title} text_type_h2 text_color_primary`}
-          >
+        <div
+          className={`${styles.info_box} text text_type_medium text_color_white`}
+        >
+          <h2 className={`${styles.title} text_type_h2 text_color_primary`}>
             {textPrtnershipPage.title2}
           </h2>
           <p className={`${styles.text} mt-5 mb-12`}>
@@ -64,6 +63,7 @@ export const PartnershipPage = ({ extraClass = "" }) => {
         />
       </main>
       <FeedbackCard />
+      <RecomendationCard />
       <Footer />
     </div>
   );

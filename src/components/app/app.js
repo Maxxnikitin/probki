@@ -3,6 +3,7 @@ import "./app.css";
 import { NotFoundPage } from "../not-found-page/not-found-page";
 import { LoyaltyPage } from "../loyalty-page/loyalty-page";
 import { PartnershipPage } from "../partnership-page/partnership-page";
+import { GoodsCardPage } from "../goods-card-page/goods-card-page";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact>
-            <PartnershipPage />
+            <GoodsCardPage />
           </Route>
           <Route path="/partners" exact>
             <PartnershipPage />

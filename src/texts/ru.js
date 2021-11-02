@@ -109,3 +109,8 @@ export const textFeedbackCard = {
   allFeedback: "Смотреть все отзывы...",
   btnText: "Оставить отзыв",
 };
+
+export const textRecomendationCard = {
+  title: "Также рекомендуем",
+  btnText: "Перейти в каталог",
+};

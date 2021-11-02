@@ -11,7 +11,10 @@ export const FeedbackCard = ({ extraClass = "" }) => {
         <h3 className={`${styles.title} text text_type_h3 text_color_primary`}>
           {textFeedbackCard.title}
         </h3>
-        <a className={`${styles.link} text text_type_medium text_color_link`} href="yandex.ru">
+        <a
+          className={`${styles.link} text text_type_medium text_color_link`}
+          href="yandex.ru"
+        >
           {textFeedbackCard.allFeedback}
         </a>
       </div>
