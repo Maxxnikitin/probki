@@ -5,6 +5,7 @@ import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
 import providerImg from "../../images/6.jpg";
 import rentImg from "../../images/7.jpg";
+import { FeedbackCard } from "../feedback-card/feedback-card";
 
 export const PartnershipPage = ({ extraClass = "" }) => {
   return (
@@ -62,6 +63,7 @@ export const PartnershipPage = ({ extraClass = "" }) => {
           alt={textPrtnershipPage.imgAlt}
         />
       </main>
+      <FeedbackCard />
       <Footer />
     </div>
   );

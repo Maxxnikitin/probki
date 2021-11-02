@@ -13,6 +13,7 @@
   --text-rating-color: #111;
   --text-input-color: #787878;
   --text-stock-color: #9f403d;
+  --text-link-color: #88c2f9;
   --colors-interface-form: #f5f1e3;
   --colors-button-hover: #a86c21;
   --colors-button-pressed: #7e4600;
@@ -98,6 +99,10 @@ body {
 
 .text_color_stock {
   color: var(--text-stock-color);
+}
+
+.text_color_link {
+  color: var(--text-link-color);
 }
 
 .text_type_h1 {

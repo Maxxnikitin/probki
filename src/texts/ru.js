@@ -103,3 +103,9 @@ export const textFeedback = {
   dignity: "Достоинства: ",
   defects: "Недостатки: ",
 };
+
+export const textFeedbackCard = {
+  title: "Отзывы",
+  allFeedback: "Смотреть все отзывы...",
+  btnText: "Оставить отзыв",
+};
