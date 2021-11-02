@@ -29,6 +29,44 @@ export const textPartnershipCard = {
   imgAlt: "Картинка предложения.",
 };
 
+export const textFeedback = {
+  ratingAlt: "Звезда",
+  dignity: "Достоинства: ",
+  defects: "Недостатки: ",
+};
+
+export const textFeedbackCard = {
+  title: "Отзывы",
+  allFeedback: "Смотреть все отзывы...",
+  btnText: "Оставить отзыв",
+};
+
+export const textRecomendationCard = {
+  title: "Также рекомендуем",
+  btnText: "Перейти в каталог",
+};
+
+export const textGoodsDetailsCard = {
+  stock: "В наличии",
+  stockUnit: "шт",
+  producer: "Производитель:",
+  brand: "Бренд:",
+  ibu: "IBU:",
+  style: "Стиль:",
+  color: "Цвет:",
+  density: "Плотность:",
+  strength: "Крепость:",
+  taste: "Вкус:",
+  volume: "Объём:",
+  volumeUnit: "л",
+  points: "Вы можете оплатить до 100% баллами",
+  btnText: "В корзину",
+  currency: "₽",
+  imgAlt: "Фото товара.",
+  ratingAlt: "Звезда.",
+  description: "Описание",
+};
+
 export const textFooter = {
   logoAlt: "Логотип.",
   socialsAlt: "Иконка соцсети.",
@@ -96,21 +134,4 @@ export const textPrtnershipPage = {
   text2_5: "Арендная ставка за м.кв",
   text2_6: "Этаж",
   text2_7: "Мы обязательно с вами свяжемся!",
-};
-
-export const textFeedback = {
-  ratingAlt: "Звезда",
-  dignity: "Достоинства: ",
-  defects: "Недостатки: ",
-};
-
-export const textFeedbackCard = {
-  title: "Отзывы",
-  allFeedback: "Смотреть все отзывы...",
-  btnText: "Оставить отзыв",
-};
-
-export const textRecomendationCard = {
-  title: "Также рекомендуем",
-  btnText: "Перейти в каталог",
 };

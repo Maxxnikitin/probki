@@ -13,6 +13,9 @@ function App() {
           <Route path="/" exact>
             <GoodsCardPage />
           </Route>
+          <Route path="/desc">
+            <GoodsCardPage />
+          </Route>
           <Route path="/partners" exact>
             <PartnershipPage />
           </Route>
