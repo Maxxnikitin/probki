@@ -1,0 +1,16 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 16px 0 40px;
+}
+
+.text {
+  max-width: 635px;
+}
+
+.big_text {
+  font-weight: normal;
+  line-height: 140%;
+  letter-spacing: 0.37px;
+}

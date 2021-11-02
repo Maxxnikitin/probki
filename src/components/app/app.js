@@ -4,6 +4,7 @@ import { NotFoundPage } from "../not-found-page/not-found-page";
 import { LoyaltyPage } from "../loyalty-page/loyalty-page";
 import { PartnershipPage } from "../partnership-page/partnership-page";
 import { GoodsCardPage } from "../goods-card-page/goods-card-page";
+import { ReservationPage } from "../reservation-page/reservation-page";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact>
-            <GoodsCardPage />
+            <ReservationPage />
           </Route>
           <Route path="/desc">
             <GoodsCardPage />
