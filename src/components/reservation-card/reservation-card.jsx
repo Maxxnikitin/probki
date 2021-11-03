@@ -7,7 +7,7 @@ import { SignUp } from "../sign-up/sign-up";
 import { OrderCostCard } from "../order-cost-card/order-cost-card";
 
 export const ReservationCard = ({ order = 0, totalCost = 0, extraClass = "" }) => {
-  const [step, setStep] = React.useState(2);
+  const [step, setStep] = React.useState(1);
 
   return (
     <section className={`${styles.content} ${extraClass}`}>

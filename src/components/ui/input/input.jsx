@@ -26,7 +26,7 @@ export const Input = ({
         id={id}
         type={type}
         placeholder={placeholder}
-        className={`${styles.input} ${styles[kind]} text text_type_small ${inputTextColor}`}
+        className={`${styles.input} ${styles[kind]} text text_type_medium ${inputTextColor}`}
       />
     </div>
   );

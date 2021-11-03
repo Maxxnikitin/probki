@@ -9,6 +9,7 @@
   --text-additional-color: #cfbc9e;
   --text-white-color: #fff;
   --text-black-color: #1c1c1c;
+  --text-red-color: #c83f3b;
   --text-select-color: #a29d90;
   --text-rating-color: #111;
   --text-input-color: #787878;
@@ -19,6 +20,8 @@
   --colors-button-pressed: #7e4600;
   --colors-checkbox: #5bb0ff;
   --colors-checkbox-border: #dddbcb;
+  --colors-border-default: #dae2e8;
+  --colors-border-correct: #0ab025;
 
   --scrollbar-color: var(--text-primary-color) var(--text-input-color);
   --scrollbar-width: thin;
@@ -75,6 +78,10 @@ body {
 
 .text_color_white {
   color: var(--text-white-color);
+}
+
+.text_color_red {
+  color: var(--text-red-color);
 }
 
 .text_color_select {

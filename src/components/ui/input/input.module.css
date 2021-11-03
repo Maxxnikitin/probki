@@ -15,10 +15,26 @@
 }
 
 .form {
-  width: calc(100% - 36px);
+  width: calc(100% - 32px);
   height: 40px;
   padding: 0 16px;
-  border: none;
+  border: 1px solid var(--colors-border-default);
+}
+
+.form:focus {
+  border: 1px solid var(--colors-checkbox-border);
+}
+
+/* .form:valid {
+  border: 1px solid var(--colors-border-correct);
+} */
+
+.form:invalid {
+  border: 1px solid var(--text-stock-color);
+}
+
+.form:disabled {
+  border: 1px solid var(--colors-checkbox-border);
 }
 
 .search {

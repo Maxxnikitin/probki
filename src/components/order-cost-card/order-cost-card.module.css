@@ -1,12 +1,30 @@
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .cost_box {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 36px;
+}
+
+.points_box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.checkbox {
+  margin-top: 26px;
+}
+
+.title {
+  align-self: center;
+}
+
+.btn {
+  align-self: center;
+  margin-top: 32px;
 }

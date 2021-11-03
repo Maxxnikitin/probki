@@ -79,8 +79,11 @@ export const textReservationCard = {
 
 export const textOrderCostCard = {
   title: "Сумма заказа",
-  text: "Сумма",
+  cost: "Сумма:",
+  points: "Ваши баллы:",
   currency: "₽",
+  writeOff: "Списать баллы",
+  label: "Введите колличество баллов для списания",
   btnText: "Сформировать заказ",
 };
 
