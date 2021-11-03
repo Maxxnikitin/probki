@@ -9,7 +9,7 @@ export const SignUp = ({ extraClass = "" }) => {
   return (
     <FormContainer>
       <form className={`${styles.form} ${extraClass}`}>
-        <h3 className="text text_type_h3 text_color_black mb-12">
+        <h3 className={`${styles.title} text text_type_h3 text_color_black mb-12`}>
           {textSignUp.title}
         </h3>
         <Input
@@ -36,7 +36,7 @@ export const SignUp = ({ extraClass = "" }) => {
           label={textSignUp.password}
           extraClass="mb-4"
         />
-        <div className={`${styles.policy_box} mb-35`}>
+        <div className={styles.policy_box}>
           <input id="checkbox" type="checkbox" className={styles.checkbox} />
           <label
             htmlFor="checkbox"
@@ -51,7 +51,7 @@ export const SignUp = ({ extraClass = "" }) => {
             </a>
           </label>
         </div>
-        <Button kind="form" type="button" text={textSignUp.btn} />
+        <Button extraClass={styles.btn} kind="form" type="button" text={textSignUp.btn} />
       </form>
     </FormContainer>
   );

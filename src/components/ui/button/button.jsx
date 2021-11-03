@@ -6,6 +6,7 @@ export const Button = ({
   type = "button",
   text,
   textColor = "white",
+  disabled = false,
   onClick,
   extraClass = "",
 }) => {
@@ -13,6 +14,7 @@ export const Button = ({
     <button
       className={`text text_type_medium-600 text_color_${textColor} ${styles.button} ${styles[kind]} ${extraClass}`}
       type={type}
+      disabled={disabled}
       onClick={onClick}
     >
       {text}

@@ -14,3 +14,21 @@
   line-height: 140%;
   letter-spacing: 0.37px;
 }
+
+.main_content {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 40px;
+}
+
+.goods_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

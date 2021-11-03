@@ -1,5 +1,4 @@
 .button {
-  cursor: pointer;
   border: none;
   outline: none;
   transition: var(--common-transition);
@@ -21,6 +20,7 @@
 }
 
 .form:hover:enabled {
+  cursor: pointer;
   background-color: var(--colors-button-hover);
 }
 

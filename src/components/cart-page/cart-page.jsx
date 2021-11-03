@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./reservation-page.module.css";
+import styles from "./cart-page.module.css";
 import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
 import { ReservationCard } from "../reservation-card/reservation-card";
 import { RecomendationCard } from "../recomendation-card/recomendation-card";
 
-export const ReservationPage = ({ extraClass = "" }) => {
+export const CartPage = ({ extraClass = "" }) => {
   return (
     <div className={`${styles.page} ${extraClass}`}>
       <Header />

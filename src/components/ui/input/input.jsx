@@ -16,7 +16,7 @@ export const Input = ({
     <div className={`${styles.content} ${extraClass}`}>
       {label && (
         <label
-          className={`${styles.label} text text_type_medium text_color_black pb-4`}
+          className={`${styles.label} text text_type_medium text_color_black pb-3`}
           htmlFor={id}
         >
           {label}

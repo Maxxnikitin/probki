@@ -9,9 +9,7 @@ export const CartGoods = ({
   alt = textGoodsCard.imgAlt,
   name,
   cost = 0,
-  volume = 0,
   stock = 0,
-  rating = 0.0,
   extraClass = "",
 }) => {
   return (

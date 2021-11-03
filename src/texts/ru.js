@@ -68,12 +68,20 @@ export const textGoodsDetailsCard = {
 };
 
 export const textReservationCard = {
-  title: "Заказ успешно сформирован",
+  title1: "Корзина",
+  title2: "Заказ успешно сформирован",
   text: "Обратите внимание, что заказ нужно оплатить и забрать сегодня до 22:00 по адресу:",
   address: "г. Люберцы, ул. 3-е почтов. отделение, дом 49, корп. 2",
   orderNumber: "Номер заказа",
   cost: "К оплате",
   currency: "₽",
+};
+
+export const textOrderCostCard = {
+  title: "Сумма заказа",
+  text: "Сумма",
+  currency: "₽",
+  btnText: "Сформировать заказ",
 };
 
 export const textFooter = {
