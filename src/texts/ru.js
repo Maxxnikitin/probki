@@ -35,6 +35,15 @@ export const textFeedback = {
   defects: "Недостатки: ",
 };
 
+export const textOrder = {
+  iconActiveAlt: "Кнопка удаления заказа.",
+  iconDoneAlt: "Иконка выполненного заказа.",
+  iconArrowAlt: "Кнопка открытия подробной информации.",
+  from: "от",
+  currency: "₽",
+  amountUnit: "шт",
+};
+
 export const textFeedbackCard = {
   title: "Отзывы",
   allFeedback: "Смотреть все отзывы...",
@@ -154,4 +163,26 @@ export const textPrtnershipPage = {
   text2_5: "Арендная ставка за м.кв",
   text2_6: "Этаж",
   text2_7: "Мы обязательно с вами свяжемся!",
+};
+
+export const textPAPage = {
+  title: "Личный кабинет",
+  greeting1: "Здравствуйте",
+  greeting2: "добро пожаловать в ваш личный кабинет!",
+  dataTitle: "Ваши данные",
+  dataPhone: "Номер",
+  dataEmail: "Почта",
+  editAlt: "Иконка кнопки редактирования.",
+  activeOrderTitle: "Активный заказ",
+  activeOrderDeadline: "Заберите заказ до 22:00",
+  historyTitle: "История покупок",
+  btnText: "Все покупки",
+  loyaltyCardTitle1: "Ваша карта лояльности",
+  loyaltyCardTitle2: "Ваш баланс баллов",
+  logoAlt: "Логотип.",
+  pointsText:
+    "При любой покупке вам начисляется 3% бонусных баллов Вы можете списать 100% баллов при покупке любого товара",
+  addingCard:
+    "Хотите копить баллы и экономить свои деньги? Заведите карту лояльности нашего магазина!",
+  addingCardText: "Завести карту",
 };

@@ -113,7 +113,7 @@ body {
 }
 
 .text_type_h1 {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -121,7 +121,7 @@ body {
 }
 
 .text_type_h2 {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -129,7 +129,7 @@ body {
 }
 
 .text_type_h3 {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -137,7 +137,7 @@ body {
 }
 
 .text_type_cart {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -145,7 +145,7 @@ body {
 }
 
 .text_type_goods-count {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -153,7 +153,7 @@ body {
 }
 
 .text_type_large {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -161,15 +161,23 @@ body {
 }
 
 .text_type_large-semibold {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 140%;
 }
 
+.text_type_order {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+}
+
 .text_type_medium {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -177,19 +185,36 @@ body {
 }
 
 .text_type_medium-600 {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
 }
 
+.text_type_medium-bold {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .text_type_small {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
+}
+
+.text_type_points_number {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 102px;
+  line-height: 140%;
+  letter-spacing: 0.9px;
 }
 
 .noselect {

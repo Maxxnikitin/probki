@@ -1,0 +1,130 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.greeting {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.main_content {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+.right_column {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+  max-width: 660px;
+}
+
+.data_title_box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.user_data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.edit_btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  padding: 0;
+  margin: auto 0;
+  width: 24px;
+  height: 24px;
+  transition: var(--common-transition);
+}
+
+.edit_btn:hover {
+  opacity: .7;
+}
+
+.data_connection_box {
+  display: flex;
+  gap: 70px;
+}
+
+.email_font {
+  letter-spacing: -0.31px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 24px 32px;
+}
+
+.history_title_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history_btn {
+  width: 130px;
+  height: 32px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.ao_order {
+  max-width: 65%;
+}
+
+.loyalty_card_box {
+  display: grid;
+  max-width: 960px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.lcb_left_column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.lcb_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 460px;
+  background-image: url(../../images/loyalty-bg.png);
+  height: 238px;
+  border-radius: var(--common-border-radius);
+}
+
+.lcb_logo {
+  width: 290px;
+  height: 70px;
+}
+
+.lcb_right_column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 460px;
+  text-align: left;
+}

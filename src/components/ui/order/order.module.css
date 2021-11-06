@@ -1,0 +1,67 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+}
+
+.main_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info_box {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  padding: 0;
+  margin: auto 0;
+  width: 20px;
+  height: 15px;
+  transition: var(--common-transition);
+}
+
+.btn:hover {
+  opacity: .7;
+}
+
+.btn_cross {
+  width: 15px;
+  height: 15px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.done_img {
+  width: 20px;
+  height: 18px;
+}
+
+.details_box {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 24px;
+  text-align: left;
+}
+
+.goods_name {
+  max-width: 268px;
+}
+
+.amount_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
