@@ -1,0 +1,17 @@
+.select {
+  width: 100%;
+  padding: 16px;
+  padding-right: 50px;
+  transition: var(--common-transition);
+  outline: none;
+  border-radius: var(--common-border-radius);
+  border: 2px solid var(--text-select-color);
+  background-color: var(--background);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../../../images/icons/arrow-select.svg);
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 16px);
+  background-position-y: 50%;
+  cursor: pointer;
+}

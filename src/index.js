@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './fonts/fonts.css';
-import './index.css';
 import './components/ui/common.css'
 import './components/ui/box.css'
 import App from './components/app/app';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -6,6 +6,7 @@ import { PartnershipPage } from "../partnership-page/partnership-page";
 import { GoodsCardPage } from "../goods-card-page/goods-card-page";
 import { CartPage } from "../cart-page/cart-page";
 import { PersonalAreaPage } from "../personal-area-page/personal-area-page";
+import { MainPage } from "../main-page/main-page";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact>
-            <PersonalAreaPage />
+            <MainPage />
           </Route>
           <Route path="/cart">
             <CartPage />

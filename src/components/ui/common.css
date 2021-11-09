@@ -22,6 +22,7 @@
   --colors-checkbox-border: #dddbcb;
   --colors-border-default: #dae2e8;
   --colors-border-correct: #0ab025;
+  --colors-slider-buttons: #918e86;
 
   --scrollbar-color: var(--text-primary-color) var(--text-input-color);
   --scrollbar-width: thin;
