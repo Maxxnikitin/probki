@@ -1,0 +1,15 @@
+.select {
+  width: 81px;
+  padding: 0 8px 0 0;
+  transition: var(--common-transition);
+  outline: none;
+  border: none;
+  background-color: var(--background);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../../../images/icons/arrow-sorting.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  cursor: pointer;
+}

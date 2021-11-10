@@ -20,6 +20,10 @@
   align-items: center;
 }
 
+.input {
+  width: 300px;
+}
+
 .location {
   display: flex;
   align-items: center;

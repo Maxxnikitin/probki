@@ -201,6 +201,22 @@ body {
   line-height: 24px;
 }
 
+.text_type_sorting {
+  font-family: "Exo", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.text_type_sorting-bold {
+  font-family: "Exo", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
 .text_type_small {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -209,8 +225,16 @@ body {
   line-height: 20px;
 }
 
+.text_type_btn-cart {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .text_type_points_number {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 102px;

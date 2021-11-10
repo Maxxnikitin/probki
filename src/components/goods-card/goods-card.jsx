@@ -67,7 +67,12 @@ export const GoodsCard = ({
           <p
             className={`${styles.cost} text text_type_large text_color_primary`}
           >{`${cost} ${textGoodsCard.currency}`}</p>
-          <Button kind="cart" text={textGoodsCard.btnText} extraClass={styles.button} />
+          <Button
+            kind="cart"
+            text={textGoodsCard.btnText}
+            extraClass={styles.button}
+            isCell={true}
+          />
         </div>
       </article>
     );

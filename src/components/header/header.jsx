@@ -23,6 +23,7 @@ export const Header = ({ extraClass = "" }) => {
               kind="search"
               type="text"
               placeholder={textHeader.placeholder}
+              extraClass={styles.input}
             />
             <div className={`${styles.location} ml-8`}>
               <img

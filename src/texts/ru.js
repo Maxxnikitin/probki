@@ -167,6 +167,35 @@ export const textStartPage = {
   alarm: "Извините, наш сайт предназначен только для совершеннолетних. =(",
 };
 
+export const textAssortmentPage = {
+  sorting: "Сортировать",
+  sorting1: "по цене",
+  searchPlaceholder: "Поиск по ассортименту",
+  filtersTitle: "Фильтры",
+  filter1: "Услуги",
+  filter2: "В наличии",
+  filterTitle1: "Разливное пиво",
+  filterTitle2: "Фасованное пиво",
+  filterTitle3: "Закуски к пиву",
+  filterTitle4: "Производитель",
+  filterTitle5: "Бренд",
+  filterTitle6: "Стиль",
+  filterTitle7: "Вкус",
+  filterTitle8: "Цвет",
+  allFilters: "смотреть все",
+  value: "Объём; л",
+  strength: "Крепость; %",
+  density: "Плотность; %",
+  ibu: "IBU",
+  from: "от",
+  to: "до",
+  btnOk: "Принять",
+  btnReset: "Сбросить",
+  iconRowAlt: "Иконка расположения товаров построчно.",
+  iconCellAlt: "Иконка расположения товаров ячейками.",
+  iconArrowAlt: "Иконка открытия списка",
+};
+
 export const textNotFoundPage = {
   iconAlt: "Страница не найдена.",
   text: "К сожалению данной страницы не существует, но вскоре мы это исправим!",
