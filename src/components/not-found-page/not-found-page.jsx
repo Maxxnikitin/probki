@@ -5,6 +5,7 @@ import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
 import notFoundIcon from "../../images/404.png";
 import { Button } from "../ui/button/button";
+import { NavButton } from "../ui/nav-button/nav-button";
 
 export const NotFoundPage = ({ extraClass = "" }) => {
   return (
@@ -21,7 +22,12 @@ export const NotFoundPage = ({ extraClass = "" }) => {
         >
           {textNotFoundPage.text}
         </p>
-        <Button kind="form" type="button" text={textNotFoundPage.btnText} />
+        <NavButton
+          to="/assortment"
+          kind="form"
+          type="button"
+          text={textNotFoundPage.btnText}
+        />
       </main>
       <Footer />
     </section>
