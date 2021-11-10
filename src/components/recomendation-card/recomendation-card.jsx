@@ -3,6 +3,7 @@ import styles from "./recomendation-card.module.css";
 import { textRecomendationCard } from "../../texts/ru";
 import { GoodsCard } from "../goods-card/goods-card";
 import { Button } from "../ui/button/button";
+import { NavButton } from "../ui/nav-button/nav-button";
 import img from "../../images/1.jpg";
 
 export const RecomendationCard = ({ extraClass = "" }) => {
@@ -47,7 +48,8 @@ export const RecomendationCard = ({ extraClass = "" }) => {
           isRow={false}
         />
       </div>
-      <Button
+      <NavButton
+        to="/assortment"
         kind="form"
         text={textRecomendationCard.btnText}
         extraClass={styles.btn}

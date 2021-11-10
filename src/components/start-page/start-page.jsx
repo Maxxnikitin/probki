@@ -3,8 +3,15 @@ import styles from "./start-page.module.css";
 import { textStartPage } from "../../texts/ru";
 import logo from "../../images/logo.png";
 import { Button } from "../ui/button/button";
+import { NavButton } from "../ui/nav-button/nav-button";
 
 export const StartPage = ({ extraClass = "" }) => {
+  const [isShowAlarm, setIsShowAlarm] = React.useState(false)
+
+  const handleShowAlarm = () => {
+    !isShowAlarm && setIsShowAlarm(true);
+  }
+
   return (
     <main className={`${styles.content} ${extraClass}`}>
       <img
@@ -19,7 +26,8 @@ export const StartPage = ({ extraClass = "" }) => {
           {textStartPage.title}
         </h2>
         <div className={styles.btn_box}>
-          <Button
+          <NavButton
+            to="/main"
             kind="form"
             type="button"
             textColor="black"
@@ -32,14 +40,15 @@ export const StartPage = ({ extraClass = "" }) => {
             textColor="black"
             text={textStartPage.disagree}
             extraClass={styles.btn}
+            onClick={handleShowAlarm}
           />
         </div>
       </div>
-      <p
+      {isShowAlarm && <p
         className={`mt-20 ${styles.alarm} text text_type_large text_color_white`}
       >
         {textStartPage.alarm}
-      </p>
+      </p>}
     </main>
   );
 };

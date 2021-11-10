@@ -1,0 +1,44 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  transition: var(--common-transition);
+  background: none;
+  padding: 0;
+  border-radius: var(--common-border-radius);
+	letter-spacing: -0.31px;
+	text-align: center;
+  text-decoration: none;
+  width: 240px;
+  height: 44px;
+}
+
+.form {
+  background-color: var(--text-primary-color);
+}
+
+.form:disabled {
+  opacity: .4;
+}
+
+.form:hover:enabled {
+  cursor: pointer;
+  background-color: var(--colors-button-hover);
+}
+
+.form:active:enabled {
+  background-color: var(--colors-button-pressed);
+}
+
+
+.cart {
+  background-color: var(--text-white-color);
+  color: var(--text-black-color);
+}
+
+.cart:hover:enabled {
+  cursor: pointer;
+  opacity: .7;
+}

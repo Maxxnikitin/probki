@@ -45,13 +45,13 @@ export const Header = ({ extraClass = "" }) => {
           <img className={styles.logo} src={logo} alt={textHeader.logoAlt} />
           <nav className={styles.nav}>
             <NavLink
-              to="/"
+              to="/main"
               className={`mr-12 ${styles.link} text text_type_large text_color_primary`}
             >
               {textHeader.main}
             </NavLink>
             <NavLink
-              to="/catalog"
+              to="/assortment"
               className={`mr-12 ${styles.link} text text_type_large text_color_primary`}
             >
               {textHeader.catalog}

@@ -8,6 +8,7 @@ import { CartPage } from "../cart-page/cart-page";
 import { PersonalAreaPage } from "../personal-area-page/personal-area-page";
 import { MainPage } from "../main-page/main-page";
 import { AssortmentPage } from '../assortment-page/assortment-page';
+import { StartPage } from "../start-page/start-page";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact>
+            <StartPage />
+          </Route>
+          <Route path="/main">
             <MainPage />
           </Route>
           <Route path="/assortment">
@@ -32,11 +36,11 @@ function App() {
           <Route path="/partners">
             <PartnershipPage />
           </Route>
-          <Route path="/404">
-            <NotFoundPage />
-          </Route>
           <Route path="/loyalty">
             <LoyaltyPage />
+          </Route>
+          <Route path="*">
+            <NotFoundPage />
           </Route>
         </Switch>
       </BrowserRouter>

@@ -8,6 +8,7 @@ import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
 import { textMainPage, textShopsData } from "../../texts/ru";
 import { Button } from "../ui/button/button";
+import { NavButton } from "../ui/nav-button/nav-button";
 import { GoodsCard } from "../goods-card/goods-card";
 import goodsImg from "../../images/1.jpg";
 import promoImg from "../../images/11.jpg";
@@ -106,7 +107,8 @@ export const MainPage = ({ extraClass = "" }) => {
         >
           {textMainPage.title}
         </h1>
-        <Button
+        <NavButton
+          to="/assortment"
           type="button"
           kind="cart"
           text={textMainPage.btnText}
@@ -224,7 +226,8 @@ export const MainPage = ({ extraClass = "" }) => {
               />
             ))}
           </div>
-          <Button
+          <NavButton
+            to="/assortment"
             type="button"
             kind="form"
             text={textMainPage.btnText}
@@ -294,7 +297,8 @@ export const MainPage = ({ extraClass = "" }) => {
               />
             ))}
           </div>
-          <Button
+          <NavButton
+            to="/assortment"
             type="button"
             kind="form"
             text={textMainPage.btnText}
@@ -340,7 +344,8 @@ export const MainPage = ({ extraClass = "" }) => {
               />
             </div>
           </div>
-          <Button
+          <NavButton
+            to="/partners"
             type="button"
             kind="form"
             text={textMainPage.collabBtnText}

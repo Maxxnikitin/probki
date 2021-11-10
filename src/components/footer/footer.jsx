@@ -16,7 +16,7 @@ export const Footer = ({ extraClass = "" }) => {
           <nav className={styles.nav}>
             <NavLink
               exact
-              to="/"
+              to="/main"
               className={`${styles.link} text text_type_medium text_color_primary`}
             >
               {textFooter.main}
