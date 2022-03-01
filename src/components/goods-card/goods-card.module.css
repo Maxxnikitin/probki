@@ -1,6 +1,7 @@
 .content {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .img {
@@ -15,6 +16,7 @@
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  height: 100%;
 }
 
 .name_box {
@@ -35,11 +37,15 @@
   flex-direction: column;
 }
 
+.amount {
+  text-align: left;
+}
+
 .name {
   text-align: left;
 }
 
-.cost {
+.price {
   min-width: 100px;
   text-align: right;
 }
@@ -50,6 +56,7 @@
   flex-direction: column;
   align-items: flex-start;
   max-width: 260px;
+  min-width: 220px;
 }
 
 .cell .img {
@@ -57,6 +64,7 @@
   height: 307px;
   object-fit: cover;
   border-radius: var(--common-border-radius);
+  margin-right: 0;
 }
 
 .cell .button_box {
@@ -77,6 +85,132 @@
   right: 16px;
 }
 
-.cell .cost {
+.cell .price {
   text-align: left;
+}
+
+.second_row {
+  display: none;
+}
+
+.navlink {
+  text-decoration: none;
+}
+
+.cell .navlink {
+  width: 100%;
+}
+
+.volume {
+  margin-top: auto;
+}
+
+.modal {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.reg_form {
+  width: 486px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cell {
+    min-width: 220px;
+  }
+
+  .cell .img {
+    height: 265px;
+  }
+
+  .cell .rating {
+    top: 216px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .img {
+    width: 140px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    height: fit-content;
+  }
+
+  .second_row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .article .price {
+    display: none;
+  }
+
+  .cell .button_box {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+
+  .cell .volume {
+    margin-bottom: 4px;
+  }
+
+  .cell .price {
+    margin-bottom: 10px;
+  }
+  
+  .reg_form {
+    width: 386px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cell {
+    width: 100%;
+    min-width: 140px;
+  }
+
+  .reg_form {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cell .img {
+    height: 200px;
+  }
+
+  .cell .rating {
+    top: 150px;
+  }
+
+  .reg_form {
+    width: 252px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .cell {
+    width: 140px;
+  }
+
+  .cell .img {
+    height: 169px;
+  }
+
+  .cell .rating {
+    top: 120px;
+  }
 }

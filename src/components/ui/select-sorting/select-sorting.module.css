@@ -1,6 +1,6 @@
 .select {
-  width: 81px;
-  padding: 0 8px 0 0;
+  width: fit-content;
+  padding: 0 12px;
   transition: var(--common-transition);
   outline: none;
   border: none;

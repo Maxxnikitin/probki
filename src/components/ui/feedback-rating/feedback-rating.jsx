@@ -6,11 +6,7 @@ import { textFeedback } from "../../../texts/ru";
 export const FeedbackRating = ({ rating, extraClass = "" }) => {
   return (
     <div className={`${styles.content} ${extraClass}`}>
-      <img
-        className={styles.icon}
-        src={icon}
-        alt={textFeedback.ratingAlt}
-      />
+      <img className={styles.icon} src={icon} alt={textFeedback.ratingAlt} />
       <p
         className={`${styles.text} text text_type_medium text_color_white ml-2`}
       >

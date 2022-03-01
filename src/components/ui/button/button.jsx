@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./button.module.css";
+import { textButton } from '../../../texts/ru';
 
 export const Button = ({
   kind = "form",
@@ -8,6 +9,7 @@ export const Button = ({
   textColor = "white",
   disabled = false,
   isCell = false,
+  img,
   onClick,
   extraClass = "",
 }) => {
@@ -20,7 +22,7 @@ export const Button = ({
       disabled={disabled}
       onClick={onClick}
     >
-      {text}
+      {img ? <img src={img} alt={textButton.btnAlt} /> : text}
     </button>
   );
 };

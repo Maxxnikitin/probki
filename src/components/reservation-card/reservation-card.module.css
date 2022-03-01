@@ -32,3 +32,82 @@
   flex-direction: column;
   gap: 24px;
 }
+
+.modal {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  max-width: 300px;
+}
+
+.alarm_box {
+  text-align: center;
+  padding-right: 70px;
+}
+
+.reg_text {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .main_content {
+    grid-template-columns: 1fr 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main_content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .forms {
+    flex-direction: row;
+    gap: 19px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    margin-bottom: 8px;
+  }
+
+  .big_text {
+    font-size: 36px;
+    line-height: 130%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .signup {
+    display: none;
+  }
+  
+  .forms {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .reg_text {
+    display: block;
+  }
+
+  .reg_link {
+    text-decoration: none;
+  }
+
+  .forms {
+    gap: 16px;
+  }
+  
+  .title2 {
+    margin-bottom: 10px;
+  }
+
+  .goods_cards {
+    gap: 16px;
+  }
+}

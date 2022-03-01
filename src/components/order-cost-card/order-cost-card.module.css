@@ -1,6 +1,7 @@
 .content {
   display: flex;
   flex-direction: column;
+  min-width: 252px;
 }
 
 .cost_box {
@@ -27,4 +28,31 @@
 .btn {
   align-self: center;
   margin-top: 32px;
+}
+
+@media screen and (max-width: 630px) {
+  .content {
+    min-width: 100%;
+  }
+
+  .title {
+    align-self: flex-start;
+    margin-bottom: 27px;
+  }
+
+  .points_box {
+    margin-top: 20px;
+  }
+
+  .checkbox {
+    margin-top: 18px;
+  }
+
+  .mob_input {
+    margin-top: 16px;
+  }
+
+  .btn {
+    margin-top: 24px;
+  }
 }

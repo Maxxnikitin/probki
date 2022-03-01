@@ -1,5 +1,3 @@
-import img from '../images/1.jpg';
-
 export const yandexMaps = {
   krasnoarmeiskaya:
     "https://yandex.ru/map-widget/v1/?um=constructor%3A863a896d72493bf2f7a1a8e1f3556c0d326a1763dd0147309a232e0911fdcd48&amp;source=constructor",
@@ -23,102 +21,17 @@ export const yandexMaps = {
     "https://yandex.ru/map-widget/v1/?um=constructor%3A581dc06bb5f4e6a84c47c0adbbefbb0a23b78e30db4f344c5e45395379dc23bf&amp;source=constructor",
 };
 
-export const goods = [
-  {
-    name: "Пиво Plan B Cookie Monster (План Б)",
-    value: 0.5,
-    stock: 23,
-    rating: 4,
-    cost: 199,
-    img: img,
-  },
-  {
-    name: "Пиво Plan B Cookie Monster (План Б)",
-    value: 0.5,
-    stock: 23,
-    rating: 4,
-    cost: 199,
-    img: img,
-  },
-  {
-    name: "Пиво Plan B Cookie Monster (План Б)",
-    value: 0.5,
-    stock: 23,
-    rating: 4,
-    cost: 199,
-    img: img,
-  },
-  {
-    name: "Пиво Plan B Cookie Monster (План Б)",
-    value: 0.5,
-    stock: 23,
-    rating: 4,
-    cost: 199,
-    img: img,
-  },
-  {
-    name: "Пиво Plan B Cookie Monster (План Б)",
-    value: 0.5,
-    stock: 23,
-    rating: 4,
-    cost: 199,
-    img: img,
-  },
-  {
-    name: "Пиво Plan B Cookie Monster (План Б)",
-    value: 0.5,
-    stock: 23,
-    rating: 4,
-    cost: 199,
-    img: img,
-  },
-  {
-    name: "Пиво Plan B Cookie Monster (План Б)",
-    value: 0.5,
-    stock: 23,
-    rating: 4,
-    cost: 199,
-    img: img,
-  },
-  {
-    name: "Пиво Plan B Cookie Monster (План Б)",
-    value: 0.5,
-    stock: 23,
-    rating: 4,
-    cost: 199,
-    img: img,
-  },
-  {
-    name: "Пиво Plan B Cookie Monster (План Б)",
-    value: 0.5,
-    stock: 23,
-    rating: 4,
-    cost: 199,
-    img: img,
-  },
-  {
-    name: "Пиво Plan B Cookie Monster (План Б)",
-    value: 0.5,
-    stock: 23,
-    rating: 4,
-    cost: 199,
-    img: img,
-  },
-  {
-    name: "Пиво Plan B Cookie Monster (План Б)",
-    value: 0.5,
-    stock: 23,
-    rating: 4,
-    cost: 199,
-    img: img,
-  },
-  {
-    name: "Пиво Plan B Cookie Monster (План Б)",
-    value: 0.5,
-    stock: 23,
-    rating: 4,
-    cost: 199,
-    img: img,
-  },
-];
+export const URL = "https://probkishop.ru/api/v1";
 
+export const getPrice = (good) => {
+  if (!good?.price) {
+    return "-";
+  } else {
+    const coins = good?.price.split(".")[1];
+    if (coins === "00") {
+      return +good?.price.split(".")[0];
+    } else {
+      return +`${good?.price.split(".")[0]}.${coins[0]}`;
+    }
+  }
+};

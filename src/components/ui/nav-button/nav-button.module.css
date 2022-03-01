@@ -23,12 +23,12 @@
   opacity: .4;
 }
 
-.form:hover:enabled {
+.form:hover {
   cursor: pointer;
   background-color: var(--colors-button-hover);
 }
 
-.form:active:enabled {
+.form:active {
   background-color: var(--colors-button-pressed);
 }
 
@@ -38,7 +38,7 @@
   color: var(--text-black-color);
 }
 
-.cart:hover:enabled {
+.cart:hover {
   cursor: pointer;
   opacity: .7;
 }

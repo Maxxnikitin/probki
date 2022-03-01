@@ -3,10 +3,11 @@ import styles from "./checkbox.module.css";
 
 export const Checkbox = ({
   name,
+  id,
   checked = false,
   isFilter = false,
   label,
-  onClick,
+  onChange,
   extraClass = "",
 }) => {
   const labelClassName = isFilter
@@ -15,7 +16,14 @@ export const Checkbox = ({
 
   return (
     <div className={`${styles.content} ${extraClass}`}>
-      <input className={styles.input} type="checkbox" name={name} id={name} />
+      <input
+        className={styles.input}
+        checked={checked}
+        onChange={onChange}
+        type="checkbox"
+        name={id}
+        id={name}
+      />
       <label className={labelClassName} htmlFor={name}>
         {label}
       </label>

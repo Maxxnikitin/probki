@@ -8,9 +8,13 @@
 }
 
 .policy_box {
+  height: 95px;
+  text-align: left;
+}
+
+.policy_row {
   display: flex;
   align-items: flex-start;
-  height: 95px;
 }
 
 .checkbox {
@@ -21,6 +25,7 @@
 
 .policy {
   cursor: pointer;
+  text-align: left;
 }
 
 .link {
@@ -29,4 +34,44 @@
 
 .btn {
   align-self: center;
+}
+
+.reactivate_btn {
+  align-self: center;
+  padding: 0;
+  background: none;
+  margin-bottom: 10px;
+}
+
+.error {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login_box {
+  align-self: center;
+  margin-top: 10px;
+}
+
+.login_btn {
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: var(--common-transition);
+}
+
+.login_btn:hover {
+  opacity: .7;
+}
+
+.recaptcha {
+  margin: 0 auto 20px;
 }

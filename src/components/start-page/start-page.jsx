@@ -1,16 +1,23 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import styles from "./start-page.module.css";
 import { textStartPage } from "../../texts/ru";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo.svg";
 import { Button } from "../ui/button/button";
-import { NavButton } from "../ui/nav-button/nav-button";
 
 export const StartPage = ({ extraClass = "" }) => {
-  const [isShowAlarm, setIsShowAlarm] = React.useState(false)
+  const history = useHistory();
+
+  const [isShowAlarm, setIsShowAlarm] = React.useState(false);
 
   const handleShowAlarm = () => {
     !isShowAlarm && setIsShowAlarm(true);
-  }
+  };
+
+  const handleAgeConfirm = () => {
+    localStorage.setItem("adult", true);
+    history.replace({ pathname: "/main" });
+  };
 
   return (
     <main className={`${styles.content} ${extraClass}`}>
@@ -26,29 +33,29 @@ export const StartPage = ({ extraClass = "" }) => {
           {textStartPage.title}
         </h2>
         <div className={styles.btn_box}>
-          <NavButton
-            to="/main"
+          <Button
             kind="form"
             type="button"
-            textColor="black"
             text={textStartPage.agree}
             extraClass={`${styles.btn} mr-16`}
+            onClick={handleAgeConfirm}
           />
           <Button
             kind="form"
             type="button"
-            textColor="black"
             text={textStartPage.disagree}
             extraClass={styles.btn}
             onClick={handleShowAlarm}
           />
         </div>
       </div>
-      {isShowAlarm && <p
-        className={`mt-20 ${styles.alarm} text text_type_large text_color_white`}
-      >
-        {textStartPage.alarm}
-      </p>}
+      {isShowAlarm && (
+        <p
+          className={`mt-20 ${styles.alarm} text text_type_large text_color_white`}
+        >
+          {textStartPage.alarm}
+        </p>
+      )}
     </main>
   );
 };

@@ -1,15 +1,9 @@
-.page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-}
-
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: calc(100vh - 395px);
 }
 
 .icon {
@@ -19,4 +13,49 @@
 
 .text {
   max-width: 571px;
+}
+
+@media screen and (max-width: 1000px) {
+  .icon {
+    width: 562px;
+    height: 98px;
+  }
+
+  .text {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    height: calc(100vh - 480px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .icon {
+    width: 401px;
+    height: 70px;
+  }
+
+  .text {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    height: calc(100vh - 483px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    height: calc(100vh - 548px);
+  }
+
+  .icon {
+    width: 287px;
+    height: 50px;
+  }
 }

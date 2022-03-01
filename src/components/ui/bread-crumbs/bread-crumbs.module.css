@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.link {
+  display: flex;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.back_img {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .mobile {
+    display: none;
+  }
+
+  .back_img {
+    display: block;
+  }
+}

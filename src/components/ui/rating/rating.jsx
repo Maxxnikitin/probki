@@ -12,7 +12,7 @@ export const Rating = ({ rating, extraClass = "" }) => {
         alt={textGoodsCard.ratingAlt}
       />
       <p className={`${styles.rating} text text_type_medium text_color_rating`}>
-        {rating.toFixed(1)}
+        {rating ?? "0.0"}
       </p>
     </div>
   );

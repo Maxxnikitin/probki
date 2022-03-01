@@ -7,8 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   max-width: 1160px;
-  height: 168px;
-  padding: 32px 0;
+  padding: 31px 40px 32px;
   margin: 0 auto;
 }
 
@@ -16,12 +15,14 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 73px;
 }
 
 .second_row {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  height: 32px;
 }
 
 .logo {
@@ -47,8 +48,41 @@
 .link {
   text-decoration: none;
   transition: var(--common-transition);
+  height: fit-content;
 }
 
 .link:hover {
   opacity: .7;
+}
+
+.img {
+  margin-bottom: -5px;
+}
+
+@media screen and (max-width: 959px) {
+  .content {
+    padding: 31px 10px 32px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    padding: 31px 10px 38px;
+  }
+  
+  .first_row {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 }

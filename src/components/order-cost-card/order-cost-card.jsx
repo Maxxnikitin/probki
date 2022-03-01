@@ -3,16 +3,22 @@ import styles from "./order-cost-card.module.css";
 import { FormContainer } from "../ui/form-container/form-container";
 import { textOrderCostCard } from "../../texts/ru";
 import { Button } from "../ui/button/button";
-import { Checkbox } from "../ui/checkbox/checkbox";
-import { Input } from "../ui/input/input";
+import { UserContext } from "../../utils/context";
 
 export const OrderCostCard = ({
-  totalCost = 0,
-  userPoints = 0,
+  handleSetOrder,
+  isLogin,
+  isDisabled,
+  totalPrice,
   extraClass = "",
 }) => {
-  const isLogin = false;
   const titleColor = isLogin ? "primary" : "black";
+  const [user] = React.useContext(UserContext);
+  const [bonuses, setBonuses] = React.useState(0);
+
+  React.useEffect(() => {
+    user.phone && setBonuses(Math.floor(user.bonuses));
+  }, [user]);
 
   return (
     <FormContainer>
@@ -26,32 +32,23 @@ export const OrderCostCard = ({
           <p className="text text_type_h3 text_color_black">
             {textOrderCostCard.cost}
           </p>
-          <p className="text text_type_large text_color_black">{`${totalCost} ${textOrderCostCard.currency}`}</p>
+          <p className="text text_type_large text_color_black">{`${totalPrice} ${textOrderCostCard.currency}`}</p>
         </div>
         {isLogin && (
-          <>
-            <div className={styles.points_box}>
-              <p className="text text_type_h3 text_color_black">
-                {textOrderCostCard.points}
-              </p>
-              <p className="text text_type_large text_color_red">
-                {userPoints}
-              </p>
-            </div>
-            <Checkbox
-              label={textOrderCostCard.writeOff}
-              name="points"
-              extraClass={styles.checkbox}
-            />
-            <Input label={textOrderCostCard.label} extraClass="mt-9" />
-          </>
+          <div className={styles.points_box}>
+            <p className="text text_type_h3 text_color_black">
+              {textOrderCostCard.points}
+            </p>
+            <p className="text text_type_large text_color_red">{bonuses}</p>
+          </div>
         )}
         <Button
           extraClass={styles.btn}
-          disabled={!isLogin}
+          disabled={isDisabled}
           kind="form"
           type="button"
           text={textOrderCostCard.btnText}
+          onClick={handleSetOrder}
         />
       </div>
     </FormContainer>

@@ -1,0 +1,16 @@
+.app {
+  text-align: center;
+}
+
+.content {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 959px) {
+  .content {
+    padding: 0 10px;
+  }
+}

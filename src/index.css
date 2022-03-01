@@ -43,3 +43,33 @@
   .swiper-pagination-bullet {
   margin: 0 8px;
 }
+
+.rc-slider-rail {
+  background-color: #fff;
+}
+
+.rc-slider-track {
+  background-color: var(--text-select-color);
+}
+
+.rc-slider-handle {
+  border: 2px solid #2f1b10;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 750px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .swiper .swiper-pagination {
+    bottom: 0;
+  }
+
+  .swiper {
+    padding-bottom: 36px;
+  }
+}

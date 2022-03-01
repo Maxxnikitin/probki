@@ -22,4 +22,32 @@
   flex-direction: column;
   gap: 10px;
   width: 100%;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.open_more_btn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  transition: var(--common-transition);
+  align-self: flex-end;
+}
+
+.open_more_btn:hover {
+  opacity: .7;
+}
+
+.filters_box::-webkit-scrollbar {
+  width: 6px;
+}
+.filters_box::-webkit-scrollbar-track {
+  background: var(--text-input-color);
+}
+.filters_box::-webkit-scrollbar-thumb {
+  background: var(--text-primary-color);
+  border: 1px solid var(--text-input-color);
+  border-radius: 6px;
 }

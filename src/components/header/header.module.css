@@ -1,5 +1,5 @@
 .header {
-  height: 160px;
+  position: relative;
 }
 
 .content {
@@ -8,16 +8,17 @@
   justify-content: space-between;
   max-width: 1160px;
   margin: 0 auto;
-  padding: 16px 0;
+  padding: 16px 40px 11px;
 }
 
 .first_row {
   border-bottom: 1px solid rgba(162, 157, 144, .5);
 }
 
-.search_box {
+.location_box {
   display: flex;
   align-items: center;
+  padding: 5px 0;
 }
 
 .input {
@@ -50,4 +51,161 @@
 
 .link:hover {
   opacity: .7;
+}
+
+.loc_btn {
+  cursor: pointer;
+  display: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.burger_icon {
+  cursor: pointer;
+  display: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 24px;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.loc_modal {
+  top: 50px;
+  right: 10px;
+  padding: 20px;
+}
+
+.menu_modal {
+  padding: 10px;
+}
+
+.img {
+  width: 24px;
+  height: 32px;
+}
+
+.mob_icons {
+  display: none;
+}
+
+.f_mob_icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon_img {
+  display: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  right: -40px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.user_name {
+  max-width: 230px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tel {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1190px) {
+  .user_name {
+    display: none;
+  }
+
+  .icon_img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .content {
+    padding: 16px 10px 11px;
+  }
+
+  .law_text {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .hidden_links {
+    display: none;
+  }
+
+  .burger_icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .location {
+    display: none;
+  }
+
+  .loc_btn {
+    display: block;
+  }
+
+  .location_box {
+    padding: 0;
+  }
+
+  .imgLocation {
+    width: 24px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .burger_icon {
+    margin-right: 0;
+  }
+
+  .imgLocation {
+    width: 15px;
+    height: 20px;
+  }
+
+  .f_mob_icons {
+    display: none;
+  }
+
+  .mob_icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu_modal {
+    right: 12px;
+  }
 }

@@ -1,6 +1,19 @@
 .content {
   display: flex;
   flex-direction: column;
+}
+
+.law_box {
+  background-color: var(--colors-checkbox-border);
+  text-align: left;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.law_text {
   max-width: 1160px;
   margin: 0 auto;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
 }

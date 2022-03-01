@@ -1,0 +1,26 @@
+.button {
+  border: none;
+  outline: none;
+  transition: var(--common-transition);
+  background: none;
+  background-color: var(--text-primary-color);
+  padding: 0;
+  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+	text-align: center;
+  opacity: .4;
+}
+
+.button:hover:enabled {
+  cursor: pointer;
+  background-color: var(--colors-button-hover);
+}
+
+.button:active:enabled {
+  background-color: var(--colors-button-pressed);
+}
+
+.active {
+  opacity: 1;
+}

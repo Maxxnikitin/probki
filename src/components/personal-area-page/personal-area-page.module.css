@@ -2,12 +2,30 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 1160px;
-  margin: 0 auto;
+}
+
+.header_box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px
+}
+
+.logout {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  transition: var(--common-transition);
+  cursor: pointer;
+}
+
+.logout:hover {
+  opacity: .7;
 }
 
 .greeting {
-  width: 100%;
+  width: calc(100% - 48px);
   text-align: left;
   margin-bottom: 32px;
 }
@@ -30,6 +48,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.data_box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .user_data {
@@ -56,7 +80,9 @@
 
 .data_connection_box {
   display: flex;
-  gap: 70px;
+  justify-content: space-between;
+  width: 100%;
+  gap: 24px;
 }
 
 .email_font {
@@ -68,6 +94,7 @@
   flex-direction: column;
   flex-grow: 1;
   padding: 24px 32px;
+  min-width: 396px;
 }
 
 .history_title_box {
@@ -93,7 +120,7 @@
   max-width: 960px;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .lcb_left_column {
@@ -110,6 +137,7 @@
   justify-content: center;
   width: 100%;
   max-width: 460px;
+  min-width: 460px;
   background-image: url(../../images/loyalty-bg.png);
   height: 238px;
   border-radius: var(--common-border-radius);
@@ -127,4 +155,152 @@
   width: 100%;
   max-width: 460px;
   text-align: left;
+}
+
+.mob_history_btn {
+  display: none;
+}
+
+.log_btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  transition: var(--common-transition);
+  font-weight: bold;
+}
+
+.log_btn:hover {
+  opacity: .7;
+}
+
+.modal {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.reg_form {
+  max-width: 486px;
+  min-width: 432px;
+}
+
+@media screen and (max-width: 1150px) {
+  .data_title_box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .ao_order {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main_content {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .right_column {
+    gap: 16px;
+    max-width: 100%;
+  }
+
+  .data_title_box {
+    flex-direction: row;
+    align-items: normal;
+    gap: normal;
+  }
+
+  .ao_order {
+    max-width: 550px;
+  }
+
+  .ho_order {
+    max-width: 550px;
+  }
+
+  .loyalty_card_box {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .data_title_box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .ao_order {
+    max-width: 100%;
+  }
+
+  .history {
+    min-width: 350px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
+  .data_connection_box {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .lcb_card {
+    min-width: 398px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .reg_form {
+    min-width: 400px;
+  }
+
+  .header_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .reg_form {
+    min-width: 370px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .reg_form {
+    min-width: 252px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .history_btn {
+    display: none;
+  }
+
+  .mob_history_btn {
+    display: block;
+    align-self: center;
+    margin-top: 40px;
+  }
+
+  .history {
+    min-width: 252px;
+  }
+
+  .lcb_card {
+    min-width: 300px;
+    height: 176px;
+  }
+
+  .lcb_logo {
+    width: 220px;
+    height: 53px;
+  }
 }

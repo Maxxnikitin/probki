@@ -1,8 +1,8 @@
 export const textGoodsCard = {
   volume: "Объём",
   volumeUnit: "л",
-  stock: "В наличии",
-  stockUnit: "шт",
+  amount: "В наличии",
+  amountUnit: "шт",
   btnText: "В корзину",
   currency: "₽",
   imgAlt: "Фото товара.",
@@ -12,13 +12,54 @@ export const textGoodsCard = {
 
 export const textSignUp = {
   title: "Регистрация",
-  name: "Фамилия Имя Отчество",
-  email: "Почта",
-  tel: "Номер телефона",
+  name: "Имя",
+  phone: "Номер телефона",
   password: "Пароль",
   agreement: "Согласен с",
+  code: "Код из смс",
   privacyPolicy: "политикой конфиденциальности",
   btn: "Регистрация",
+  reactivete: "Запросить код повторно",
+  login: "Уже зарегистрированы?",
+  loginBtn: "Войти",
+};
+
+export const textSignIn = {
+  title: "Вход",
+  phone: "Номер телефона",
+  password: "Пароль",
+  remember: "Запомнить меня",
+  text: "Ваши личные данные будут использоваться для упрощения вашей работы с сайтом, управления доступом к вашей учётной записи и для других целей, описанных в нашей",
+  privacyPolicy: "политике конфиденциальности",
+  btn1: "Войти",
+  btn2: "Забыл пароль",
+  forgotPhone: "Введите ваш номер телефона для отправки смс с кодом",
+  forgotBtn: "Отправить",
+  forgotFinally: "Пароль успешно изменён. Введите его в форму авторизации",
+  code: "Код из смс",
+  reactivete: "Запросить код повторно",
+};
+
+export const textErrorsForms = {
+  invalidName: "Введите имя",
+  invalidPhone: "Введите корректный номер телефона",
+  doublePhone:
+    'Пользователь с таким номером уже зарегистрирован. Если вы забыли пароль или уже являетесь клиентом наших магазинов, воспользуйтесь кнопкой "Забыл пароль" в форме авторизации',
+  invalidPassword: "Пароль должен содержать более 6 символов",
+  invalidAgreement: "Необходимо принять политику конфиденциальности",
+  invalidLogin: "Неправильный логин или пароль",
+  invalidCode: "Неправильный код",
+  invalidReset: "Произошла ошибка, повторите попытку позже",
+  invalidServer: "Ошибка сервера",
+  invalidVerify: "Подтвердите, что вы не робот",
+};
+
+export const textInput = {
+  passwordAlt: "Кнопка переключения режима пароля.",
+};
+
+export const textPopup = {
+  closeAlt: "Кнопка закрытия.",
 };
 
 export const textPromoCard = {
@@ -56,17 +97,20 @@ export const textRecomendationCard = {
 };
 
 export const textGoodsDetailsCard = {
+  mainInfo: {
+    brewery: "Производитель:",
+    ibu: "IBU:",
+    style: "Стиль:",
+    color: "Цвет:",
+    density: "Плотность:",
+    abv: "Крепость:",
+    taste: "Вкус:",
+    volume: "Объём:",
+    kind: "Тип",
+    country: "Страна-производитель:",
+  },
   stock: "В наличии",
   stockUnit: "шт",
-  producer: "Производитель:",
-  brand: "Бренд:",
-  ibu: "IBU:",
-  style: "Стиль:",
-  color: "Цвет:",
-  density: "Плотность:",
-  strength: "Крепость:",
-  taste: "Вкус:",
-  volume: "Объём:",
   volumeUnit: "л",
   points: "Вы можете оплатить до 100% баллами",
   btnText: "В корзину",
@@ -74,16 +118,24 @@ export const textGoodsDetailsCard = {
   imgAlt: "Фото товара.",
   ratingAlt: "Звезда.",
   description: "Описание",
+  specifications: "Характеристики",
 };
 
 export const textReservationCard = {
   title1: "Корзина",
   title2: "Заказ успешно сформирован",
-  text: "Обратите внимание, что заказ нужно оплатить и забрать сегодня до 22:00 по адресу:",
+  text_1:
+    "Спасибо вам за заказ! Также в нашем магазине вы можете купить вкусную закуску, наши продавцы-консультанты помогут вам с правильным выбором!",
+  text: "Обратите внимание, что заказ нужно оплатить и забрать сегодня до 23:00 по адресу:",
   address: "г. Люберцы, ул. 3-е почтов. отделение, дом 49, корп. 2",
   orderNumber: "Номер заказа",
   cost: "К оплате",
   currency: "₽",
+  reg: "Для оформления заказа необходимо",
+  regLink: "зарегистрироваться",
+  notTables:
+    "Достигнуто максимальное количество заказов для данного магазина. Пожалуйста, повторите попытку позже",
+  notAmount: "Не хватает нужного количества товаров в магазине",
 };
 
 export const textOrderCostCard = {
@@ -101,32 +153,37 @@ export const textFooter = {
   socialsAlt: "Иконка соцсети.",
   main: "Главная",
   loyalty: "О программе лояльности",
-  assortment: "Ассортимент",
+  assortment: "Каталог",
   partners: "Партнёрам",
   copyright: "probkishop.ru",
 };
 
 export const textHeader = {
-  tel: "+7 (968)-819-01-89",
   placeholder: "Поиск по сайту",
   locationAlt: "Иконка геолокации.",
   logoAlt: "Логотип",
   iconAlt: "Иконка меню.",
-  zhukovskiy: "г. Жуковский",
   main: "Главная",
   catalog: "Каталог",
   loyalty: "Программа лояльности",
+  cityPrefix: "г",
+  pa: "Личный кабинет",
+  cart: "Корзина",
+};
+
+export const textCartPage = {
+  law: "Согласно Статье 16, параграфу 2, подпункту 14, запрещено продавать алкоголь через нестационарные торговые объекты, в том числе с доставкой на дом.",
 };
 
 export const textMainPage = {
-  title: "Самые лучшие напитки от зарубежных и отечественных пивоварен",
+  title: "Самые лучшие напитки от зарубежных и отечественных пивоварен",
   btnText: "Перейти в каталог",
   missionTitle: "Наша миссия",
   missionText:
-    "Мы прививаем культуру потребления пива, предлагая клиентам качественную продукцию, рассказывая об алкоголе с другой стороны, открывая новые горизонты. Мы даём радость, общение и повод для встреч!",
-  clarification1: "500+",
+    "Мы прививаем культуру потребления пива, предлагая клиентам качественную продукцию, рассказывая об алкоголе с другой стороны, открывая новые горизонты. Мы даём радость, общение и повод для встреч!",
+  clarification1: "800+",
   clarification1Text: "Видов крафтового пива",
-  clarification2: "60+",
+  clarification2: "50+",
   clarification2Text: "Сортов пива на кранах",
   clarification3: "130+",
   clarification3Text: "Видов закусок и рыбы",
@@ -157,6 +214,7 @@ export const textMainPage = {
   collab2Text: "Мы всегда в поисках новых помещений для новых магазинов",
   collabBtnText: "Подробнее об условиях",
   collabAlt: "Фото магазина",
+  beerAlt: "Картинка бутылок пива.",
 };
 
 export const textStartPage = {
@@ -169,19 +227,25 @@ export const textStartPage = {
 
 export const textAssortmentPage = {
   sorting: "Сортировать",
-  sorting1: "по цене",
+  sorting1: "цена \u{25B2}",
+  sorting1_1: "цена \u{25BC}",
+  sorting2: "название \u{25B2}",
+  sorting2_1: "название \u{25BC}",
+  sorting3: "количество \u{25B2}",
+  sorting3_1: "количество \u{25BC}",
   searchPlaceholder: "Поиск по ассортименту",
   filtersTitle: "Фильтры",
   filter1: "Услуги",
   filter2: "В наличии",
   filterTitle1: "Разливное пиво",
-  filterTitle2: "Фасованное пиво",
-  filterTitle3: "Закуски к пиву",
-  filterTitle4: "Производитель",
-  filterTitle5: "Бренд",
-  filterTitle6: "Стиль",
-  filterTitle7: "Вкус",
-  filterTitle8: "Цвет",
+  kind: "Тип",
+  country: "Страна-производитель",
+  snack: "Закуски к пиву",
+  brewery: "Производитель",
+  brand: "Бренд",
+  style: "Стиль",
+  taste: "Вкус",
+  color: "Цвет",
   allFilters: "смотреть все",
   value: "Объём; л",
   strength: "Крепость; %",
@@ -191,9 +255,13 @@ export const textAssortmentPage = {
   to: "до",
   btnOk: "Принять",
   btnReset: "Сбросить",
+  btnShowMore: "смотреть все",
   iconRowAlt: "Иконка расположения товаров построчно.",
   iconCellAlt: "Иконка расположения товаров ячейками.",
   iconArrowAlt: "Иконка открытия списка",
+  iconFilterAlt: "Иконка открытия фильтров",
+  pagination1: "Предыдущая",
+  pagination2: "Следующая",
 };
 
 export const textNotFoundPage = {
@@ -222,7 +290,7 @@ export const textPrtnershipPage = {
   text1_3: "Группе товара",
   text1_4: "Название компании",
   text1_5: "Описание компании",
-  text1_6: "Ассортимент",
+  text1_6: "Каталог",
   text1_7: "Прайс",
   text1_8: "Веб-сайт (если есть)",
   text1_9: "Мы обязательно с вами свяжемся!",
@@ -239,12 +307,17 @@ export const textPAPage = {
   title: "Личный кабинет",
   greeting1: "Здравствуйте",
   greeting2: "добро пожаловать в ваш личный кабинет!",
+  log1: "Пожалуйста",
+  log2: "авторизуйтесь",
+  log3: "или",
+  log4: "зарегистрируйтесь",
+  logout: "Выйти",
   dataTitle: "Ваши данные",
   dataPhone: "Номер",
   dataEmail: "Почта",
   editAlt: "Иконка кнопки редактирования.",
   activeOrderTitle: "Активный заказ",
-  activeOrderDeadline: "Заберите заказ до 22:00",
+  activeOrderDeadline: "Заберите заказ до 23:00",
   historyTitle: "История покупок",
   btnText: "Все покупки",
   loyaltyCardTitle1: "Ваша карта лояльности",
@@ -255,67 +328,27 @@ export const textPAPage = {
   addingCard:
     "Хотите копить баллы и экономить свои деньги? Заведите карту лояльности нашего магазина!",
   addingCardText: "Завести карту",
+  code: "Код из смс",
+  invalidCode: "Неправильный код",
+  phoneConflict: "Пользователь с таким номером уже существует",
 };
 
-export const textShopsData = {
-  krasnoarmeiskaya: {
-    address: "г. Раменское, ул.Красноармейская, д.4а",
-    weekdays: "11:00 – 23:00",
-    weekend: "10:00 – 23:00",
-    phone: "8 (903) 663-98-87",
-  },
-  kosmonavtov: {
-    address: "г. Раменское, ул.Космонавтов, д.20а",
-    weekdays: "10:00 – 23:00",
-    weekend: "10:00 – 23:00",
-    phone: "8 (926) 040-89-07",
-  },
-  krymskaya: {
-    address: "г. Раменское, ул.Крымская, д.3, пом. 2",
-    weekdays: "11:00 – 23:00",
-    weekend: "10:00 – 23:00",
-    phone: "8 (926) 958-56-93",
-  },
-  dugina: {
-    address: "г. Жуковский, ул.Дугина, д.28/12",
-    weekdays: "11:00 – 23:00",
-    weekend: "10:00 – 23:00",
-    phone: "8 (926) 958-54-98",
-  },
-  solnechnaya: {
-    address: "г. Жуковский, ул. Солнечная, д.12",
-    weekdays: "11:00 – 23:00",
-    weekend: "10:00 – 23:00",
-    phone: "8 (925) 541-31-07",
-  },
-  chkalova: {
-    address: "г. Жуковский, ул. Чкалова, д. 6",
-    weekdays: "10:00 – 23:00",
-    weekend: "10:00 – 23:00",
-    phone: "8 (926) 306-78-58",
-  },
-  bazhenova: {
-    address: "г. Жуковский, ул. Баженова, дом 4/1",
-    weekdays: "11:00 – 23:00",
-    weekend: "10:00 – 23:00",
-    phone: "8 (925) 457-87-20",
-  },
-  barykina: {
-    address: "г. Люберцы, ул. Барыкина дом 1/2",
-    weekdays: "11:00 – 23:00",
-    weekend: "10:00 – 23:00",
-    phone: "8 (925)442-99-72",
-  },
-  pochtovoe: {
-    address: "г. Люберцы, ул. 3-е почтовое отделение, дом 49, корп. 2",
-    weekdays: "11:00 – 23:00",
-    weekend: "11:00 – 23:00",
-    phone: "8 (916) 282-15-68",
-  },
-  sosnovaya: {
-    address: "г. Котельники, ул. Сосновая, дом 1, корп. 5",
-    weekdays: "11:00 – 23:00",
-    weekend: "11:00 – 23:00",
-    phone: "8 (915) 148-86-85",
-  },
+export const textInputRange = {
+  from: "от",
+  to: "до",
+  defaultLabel: "Объём",
+};
+
+export const textBreadCrumbs = {
+  main: "Главная /",
+  assortment: "Каталог",
+  cart: "Корзина",
+  pa: "Личный кабинет",
+  partners: "Сотрудничество",
+  loyalty: "Программа лояльности",
+  backAlt: "Кнопка назад.",
+};
+
+export const textButton = {
+  btnAlt: "Кнопка переключения страниц.",
 };

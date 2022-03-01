@@ -2,11 +2,16 @@ import React from "react";
 import styles from "./recomendation-card.module.css";
 import { textRecomendationCard } from "../../texts/ru";
 import { GoodsCard } from "../goods-card/goods-card";
-import { Button } from "../ui/button/button";
 import { NavButton } from "../ui/nav-button/nav-button";
-import img from "../../images/1.jpg";
+import { getRecommendationsCards } from "../../utils/api";
 
 export const RecomendationCard = ({ extraClass = "" }) => {
+  React.useEffect(() => {
+    getRecommendationsCards().then((res) => {
+      console.log(res);
+    })
+  }, []);
+
   return (
     <section className={`${styles.content} ${extraClass} pt-20 pb-20`}>
       <h2
@@ -15,38 +20,7 @@ export const RecomendationCard = ({ extraClass = "" }) => {
         {textRecomendationCard.title}
       </h2>
       <div className={`${styles.cards} mb-30`}>
-        <GoodsCard
-          img={img}
-          name="Пиво Найтберг Pivzdrav Жигулёвское"
-          volume={3}
-          cost="1245"
-          rating={5}
-          isRow={false}
-        />
-        <GoodsCard
-          img={img}
-          name="Пиво Найтберг Pivzdrav Жигулёвское"
-          volume={3}
-          cost="1245"
-          rating={5}
-          isRow={false}
-        />
-        <GoodsCard
-          img={img}
-          name="Пиво Найтберг Pivzdrav Жигулёвское"
-          volume={3}
-          cost="1245"
-          rating={5}
-          isRow={false}
-        />
-        <GoodsCard
-          img={img}
-          name="Пиво Найтберг Pivzdrav Жигулёвское"
-          volume={3}
-          cost="1245"
-          rating={5}
-          isRow={false}
-        />
+        
       </div>
       <NavButton
         to="/assortment"
