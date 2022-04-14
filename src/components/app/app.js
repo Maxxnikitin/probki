@@ -36,10 +36,10 @@ function App() {
     Promise.all([getShops(), getFilterUnits()]).then((res) => {
       setShops(res[0]);
       let lastShop = JSON.parse(localStorage.getItem("currentShop"));
-      setCurrentShop(lastShop ?? res[0][0]);
       if (lastShop.length) {
         lastShop = null;
       }
+      setCurrentShop(lastShop ?? res[0][0]);
       !lastShop &&
         localStorage.setItem("currentShop", JSON.stringify(res[0][0]));
       setUnitsArr(res[1]);
