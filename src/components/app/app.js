@@ -35,9 +35,13 @@ function App() {
   React.useEffect(() => {
     Promise.all([getShops(), getFilterUnits()]).then((res) => {
       setShops(res[0]);
-      const lastShop = JSON.parse(localStorage.getItem("currentShop"));
+      let lastShop = JSON.parse(localStorage.getItem("currentShop"));
       setCurrentShop(lastShop ?? res[0][0]);
-      !lastShop && localStorage.setItem("currentShop", JSON.stringify(res[0]));
+      if (lastShop.length) {
+        lastShop = null;
+      }
+      !lastShop &&
+        localStorage.setItem("currentShop", JSON.stringify(res[0][0]));
       setUnitsArr(res[1]);
     });
     return () => {
@@ -56,12 +60,14 @@ function App() {
         } else {
           refreshToken().then((res) => {
             localStorage.setItem("token", res.access);
-            Promise.all([getUserData(res.access), getCart(res.access)]).then((res) => {
-              if (res[0] && res[0].phone) {
-                setUserState(res[0]);
-                setCartState(res[1]);
+            Promise.all([getUserData(res.access), getCart(res.access)]).then(
+              (res) => {
+                if (res[0] && res[0].phone) {
+                  setUserState(res[0]);
+                  setCartState(res[1]);
+                }
               }
-            });
+            );
           });
         }
       });
